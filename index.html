@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Inclui o arquivo de estilo CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Define o ícone da página -->
+    <link rel="icon" href="img/202303212002_tylt_i.avif">
+
+    <!-- Inclui o arquivo de script JavaScript -->
+    <script src="script.js"></script>
+
+    <!--Links do bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!--Links do FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!--Link do jquery-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    
+    <!--Nome da pagina-->
+    <title>Hambugueria ComeCome - Cardápio Digital</title>
+
+</head>
+
+<body>
+
+    <!-- Cabeçalho da página -->
+    <header>
+
+        <img src="img/202303212002_tylt_i.avif" id="imgheader">
+
+        <h1 id="txtheader">Hambugueria Come Come</h1>
+
+        <div id="carrinho">
+            <a onclick="openModal1('modal13')"><i class="bi bi-cart"></i></a>
+        </div>
+
+    </header>
+    
+    <!-- Conteúdo principal -->
+    <main>
+
+        <section class="section">
+
+            <h2>Os Mais Vendidos</h2>
+
+            <div class="product-grid">
+              <div class="product-card" onclick="openModal('modal1')">
+                <div class="product-info">
+                  <h3>I Love Cheddar</h3>
+                  <p>Blend bovino de 160g , creme cheddar feito na casa, cebola caramelizada, farofa de bacon crocante no pão brioche prime</p>
+                  <strong>R$ 36,90</strong>
+                </div>
+                <img src="img/202112021856_B80F_i.avif">
+              </div>
+
+              <div class="product-card" onclick="openModal('modal2')">
+                <div class="product-info">
+                  <h3>Fake Mequi</h3>
+                  <p>2 Smash 80g, alface, queijo, molho especial, cebola crispy e picles no pão sem gergelim</p>
+                  <strong>R$ 42,90</strong>
+                </div>
+                <img src="img/202112031226_4U0G_i.avif">
+              </div>
+              <div class="product-card" onclick="openModal('modal3')">
+                <div class="product-info">
+                  <h3>Monstruoso</h3>
+                  <p>Pão Brioche, 3 blend de smash de 80g prensados na chapa, fatias de cheddar, bacon e maionese da casa</p>
+                  <strong>R$ 48,90</strong>
+                </div>
+                <img src="img/202303201542_1P00_i.avif">
+              </div>
+            </div>
+          </section>
+      
+          <section class="section">
+            <h2>Combos</h2>
+            <div class="product-grid">
+              <div class="product-card" onclick="openModal('modal4')">
+                <div class="product-info">
+                  <h3>Combo Love Cheddar Bacon</h3>
+                  <p>I Love Cheddar + I Love Bacon + 2 Batatas + Refri 1,5l Grátis!</p>
+                  <strong>R$ 99,90</strong>
+                </div>
+                <img src="img/202112021901_7R1B_i.avif">
+              </div>
+              <div class="product-card"  onclick="openModal('modal5')">
+                <div class="product-info">
+                  <h3>Combo Australiano Monstruoso</h3>
+                  <p>Australiano + Monstruoso + 2 Batatas + Refri 1,5l Grátis!</p>
+                  <strong>R$ 89,90</strong>
+                </div>
+                <img src="img/202112021903_4VEN_i.avif">
+              </div>
+              <div class="product-card"  onclick="openModal('modal6')">
+                <div class="product-info">
+                  <h3>Combo Fake Méqui</h3>
+                  <p>Fake Méqui + Quarteiraço + 2 Batatas + Refri 1,5l Grátis!</p>
+                  <strong>R$ 89,90</strong>
+                </div>
+                <img src="img/202112262016_IBOQ_i.avif">
+              </div>
+            </div>
+            <div class="product-grid">
+                <div class="product-card"  onclick="openModal('modal7')">
+                  <div class="product-info">
+                    <h3>Combo Clássico</h3>
+                    <p>Clássico X- Bacon + Mega Tasty + 2 Batatas + Refri 1,5l Grátis!</p>
+                    <strong>R$ 84,90</strong>
+                  </div>
+                  <img src="img/202112021904_2JO0_i.avif">
+                </div>
+                <div class="product-card"  onclick="openModal('modal8')">
+                  <div class="product-info">
+                    <h3>Combo Original</h3>
+                    <p>Smash Egg Bacon + The Original + 2 Batatas+ Refri 1,5l Grátis!</p>
+                    <strong>R$ 84,90</strong>
+                  </div>
+                  <img src="img/202401011633_8401_i.avif">
+                </div>
+                <div class="product-card"  onclick="openModal('modal9')">
+                  <div class="product-info">
+                    <h3>Combo Monstro</h3>
+                    <p>2 Monstruoso + 2 Batatas + Refri 1,5l Grátis!</p>
+                    <strong>R$ 99,90</strong>
+                  </div>
+                  <img src="img/202401011634_CSSG_i.avif">
+                </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>Bebidas</h2>
+            <div class="product-grid">
+              <div class="product-card"  onclick="openModal('modal10')">
+                <div class="product-info">
+                  <h3>Refrigerante Lata 350ml</h3>
+                  <p>Refrigerante lata 350ml das maiores marcas</p>
+                  <strong>R$ 7,90</strong>
+                </div>
+                <img src="img/202005112230_Ptjf_f.avif">
+              </div>
+              <div class="product-card"  onclick="openModal('modal11')">
+                <div class="product-info">
+                  <h3>Refrigerante Garrafa 1,5lt</h3>
+                  <p>Refrigerante garrafa 1,5lt das maiores marcas</p>
+                  <strong>R$ 9,90</strong>
+                </div>
+                <img src="img/202005112230_9t2S_3.avif">
+              </div>
+              <div class="product-card"  onclick="openModal('modal12')">
+                <div class="product-info">
+                  <h3>Aguá mineral 500ml</h3>
+                  <p>Garrafa de aguá mineral com 500ml</p>
+                  <strong>R$ 4,00</strong>
+                </div>
+                <img src="img/202005112254_4L2E_.avif">
+              </div>
+            </div>
+          </section>
+
+        <!-- Modal -->
+        <div id="modal1" class="modal">
+
+            <div class="modal-content">
+
+                <span class="close" onclick="closeModal('modal1')">&times;</span>
+
+                <div class="modal-body">
+
+                    <div class="modal-image">
+                        <img src="img/202112021856_B80F_i.avif" alt="I Love Cheddar">
+                    </div>
+                    
+                    <div class="modal-info">
+                        <h2>I Love Cheddar</h2>
+                        <p>Blend bovino de 160g, creme cheddar feito na casa, cebola caramelizada, farofa de bacon crocante no pão brioche prime</p>
+                        <p>Serve 1 pessoa</p>
+                        <strong>R$ 36,90</strong>
+                        
+                        <div class="modal-options">
+                            <h3>Escolha o Ponto da Carne!</h3>
+                            <label>
+                                <input type="radio" name="pontoCarne1" value="MalPassada" required>
+                                <span class="radio-custom"></span>
+                                Mal Passada
+                            </label>
+                            <label>
+                                <input type="radio" name="pontoCarne1" value="AoPonto" required>
+                                <span class="radio-custom"></span>
+                                Ao Ponto
+                            </label>
+                            <label>
+                                <input type="radio" name="pontoCarne1" value="MemPassada" required>
+                                <span class="radio-custom"></span>
+                                Bem Passada
+                            </label>
+                        </div>
+        
+                        <div class="modal-options">
+                            <h3>Quer Algum Adicional ?</h3>
+                            <label>
+                                <input type="radio" name="adicional1" value="Smash">
+                                <span class="radio-custom"></span>
+                                Smash C/Queijo R$8,90
+                            </label>
+                            <label>
+                                <input type="radio" name="adicional1" value="FarofaBacon">
+                                <span class="radio-custom"></span>
+                                Faroca De Bacon R$7,90
+                            </label>
+                            <label>
+                                <input type="radio" name="adicional1" value="CebolaCaramelizada">
+                                <span class="radio-custom"></span>
+                                Cebola Caramelizada R$3,90
+                            </label>
+                        </div>
+        
+                        <div class="modal-options">
+                            <h3>Escolha Algum Acompanhamento!</h3>
+                            <label>
+                                <input type="radio" name="acompanhamento1" value="BatataPalito">
+                                <span class="radio-custom"></span>
+                                Batata Palito - 300gr = R$9,90
+                            </label>
+                            <label>
+                                <input type="radio" name="acompanhamento1" value="BatataCheddareBacon">
+                                <span class="radio-custom"></span>
+                                Batata C/Cheddar e Bacon - 300gr = R$9,90
+                            </label>
+                            <label>
+                                <input type="radio" name="acompanhamento1" value="OnionRings">
+                                <span class="radio-custom"></span>
+                                Onions Rings - 6 Uni = R$8,90
+                            </label>
+                        </div>
+
+                        <div class="modal-options">
+                            <h3>Quer Beber Algo ?</h3>
+                            <label>
+                                <input type="radio" name="bebida1" value="LataRefri">
+                                <span class="radio-custom"></span>
+                                Lata Coca Cola - 350ml = R$7,90
+                            </label>
+                            <label>
+                                <input type="radio" name="bebida1" value="GarrafaRefri">
+                                <span class="radio-custom"></span>
+                                Garrafa De Coca Cola - 1,5L = R$9,90
+                            </label>
+                            <label>
+                                <input type="radio" name="bebida1" value="Agua">
+                                <span class="radio-custom"></span>
+                                Garrafa De Aguá Mineral - 500ml = R$4,00
+                            </label>
+                        </div>
+
+                        <div class="description-container">
+                            <label for="description${modalId}">Algum comentário?</label>
+                            <input id="description${modalId}" class="desc" name="description" type="text" placeholder="Ex: Tirar cebola, maionese á parte e etc"></input>
+                        </div>
+                        
+                        <button id="add-to-cart-button1" onclick="addToCart('I Love Cheddar', 36.90, 'modal1')">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="modal2" class="modal">
+
+            <div class="modal-content">
+
+                <span class="close" onclick="closeModal('modal2')">&times;</span>
+
+                <div class="modal-body">
+
+                    <div class="modal-image">
+                        <img src="img/202112031226_4U0G_i.avif" alt="Fake Mequi">
+                    </div>
+                    
+                    <div class="modal-info">
+                        <h2>Fake Mequi</h2>
+                        <p>2 Smash 80g, alface, queijo, molho especial, cebola crispy e picles no pão sem gergelim</p>
+                        <p>Serve 1 pessoa</p>
+                        <strong>R$ 42,90</strong>
+                        
+                        <div class="modal-options">
+                            <h3>Escolha o Ponto da Carne!</h3>
+                            <label>
+                                <input type="radio" name="pontoCarne1" value="MalPassada" required>
+                                <span class="radio-custom"></span>
+                                Mal Passada
+                            </label>
+                            <label>
+                                <input type="radio" name="pontoCarne1" value="AoPonto" required>
+                                <span class="radio-custom"></span>
+                                Ao Ponto
+                            </label>
+                            <label>
+                                <input type="radio" name="pontoCarne1" value="BemPassada" required>
+                                <span class="radio-custom"></span>
+                                Bem Passada
+                            </label>
+                        </div>
+        
+                        <div class="modal-options">
+                            <h3>Quer Algum Adicional ?</h3>
+                            <label>
+                                <input type="radio" name="adicional1" value="Smash">
+                                <span class="radio-custom"></span>
+                                Smash C/Queijo R$8,90
+                            </label>
+                            <label>
+                                <input type="radio" name="adicional1" value="FarofaBacon">
+                                <span class="radio-custom"></span>
+                                Faroca De Bacon R$7,90
+                            </label>
+                            <label>
+                                <input type="radio" name="adicional1" value="CebolaCaramelizada">
+                                <span class="radio-custom"></span>
+                                Cebola Caramelizada R$3,90
+                            </label>
+                        </div>
+        
+                        <div class="modal-options">
+                            <h3>Escolha Algum Acompanhamento!</h3>
+                            <label>
+                                <input type="radio" name="acompanhamento1" value="BatataPalito">
+                                <span class="radio-custom"></span>
+                                Batata Palito - 300gr = R$9,90
+                            </label>
+                            <label>
+                                <input type="radio" name="acompanhamento1" value="BatataCheddareBacon">
+                                <span class="radio-custom"></span>
+                                Batata C/Cheddar e Bacon - 300gr = R$9,90
+                            </label>
+                            <label>
+                                <input type="radio" name="acompanhamento1" value="OnionsRings">
+                                <span class="radio-custom"></span>
+                                Onions Rings - 6 Uni = R$8,90
+                            </label>
+                        </div>
+
+                        <div class="modal-options">
+                            <h3>Quer Beber Algo ?</h3>
+                            <label>
+                                <input type="radio" name="bebida1" value="LataRefri">
+                                <span class="radio-custom"></span>
+                                Lata Coca Cola - 350ml = R$7,90
+                            </label>
+                            <label>
+                                <input type="radio" name="bebida1" value="GarrafaRefri">
+                                <span class="radio-custom"></span>
+                                Garrafa De Coca Cola - 1,5L = R$9,90
+                            </label>
+                            <label>
+                                <input type="radio" name="bebida1" value="Agua">
+                                <span class="radio-custom"></span>
+                                Garrafa De Aguá Mineral - 500ml = R$4,00
+                            </label>
+                        </div>
+                        
+                        <div class="description-container">
+                            <label for="description${modalId}">Algum comentário?</label>
+                            <input id="description${modalId}" class="desc" name="description" type="text" placeholder="Ex: Tirar cebola, maionese á parte e etc"></input>
+                        </div>
+
+                        <button id="add-to-cart-button2" onclick="addToCart('Fake Mequi', 42.90, 'modal2')">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal3" class="modal">
+
+            <div class="modal-content">
+
+                <span class="close" onclick="closeModal('modal3')">&times;</span>
+                
+                <div class="modal-body">
+                    <div class="modal-image">
+                        <img src="img/202303201542_1P00_i.avif" alt="Monstruoso">
+                    </div>
+                    
+                    <div class="modal-info">
+                        <h2>Monstruoso</h2>
+                        <p>Pão Brioche, 3 blend de smash de 80g prensados na chapa, fatias de cheddar, bacon e maionese da casa</p>
+                        <p>Serve 1 pessoa</p>
+                        <strong>R$ 38,90</strong>
+                        
+                        <div class="modal-options">
+                            <h3>Escolha o Ponto da Carne!</h3>
+                            <label>
+                                <input type="radio" name="pontoCarne1" value="MalPassada" required>
+                                <span class="radio-custom"></span>
+                                Mal Passada
+                            </label>
+                            <label>
+                                <input type="radio" name="pontoCarne1" value="AoPonto" required>
+                                <span class="radio-custom"></span>
+                                Ao Ponto
+                            </label>
+                            <label>
+                                <input type="radio" name="pontoCarne1" value="BemPassada" required>
+                                <span class="radio-custom"></span>
+                                Bem Passada
+                            </label>
+                        </div>
+        
+                        <div class="modal-options">
+                            <h3>Quer Algum Adicional ?</h3>
+                            <label>
+                                <input type="radio" name="adicional1" value="Smash">
+                                <span class="radio-custom"></span>
+                                Smash C/Queijo R$8,90
+                            </label>
+                            <label>
+                                <input type="radio" name="adicional1" value="FarofaBacon">
+                                <span class="radio-custom"></span>
+                                Faroca De Bacon R$7,90
+                            </label>
+                            <label>
+                                <input type="radio" name="adicional1" value="CebolaCaramelizada">
+                                <span class="radio-custom"></span>
+                                Cebola Caramelizada R$3,90
+                            </label>
+                        </div>
+        
+                        <div class="modal-options">
+                            <h3>Escolha Algum Acompanhamento!</h3>
+                            <label>
+                                <input type="radio" name="acompanhamento1" value="BatataPalito">
+                                <span class="radio-custom"></span>
+                                Batata Palito - 300gr = R$9,90
+                            </label>
+                            <label>
+                                <input type="radio" name="acompanhamento1" value="BatataCheddareBacon">
+                                <span class="radio-custom"></span>
+                                Batata C/Cheddar e Bacon - 300gr = R$9,90
+                            </label>
+                            <label>
+                                <input type="radio" name="acompanhamento1" value="OnionsRings">
+                                <span class="radio-custom"></span>
+                                Onions Rings - 6 Uni = R$8,90
+                            </label>
+                        </div>
+
+                        <div class="modal-options">
+                            <h3>Quer Beber Algo ?</h3>
+                            <label>
+                                <input type="radio" name="bebida1" value="LataRefri">
+                                <span class="radio-custom"></span>
+                                Lata Coca Cola - 350ml = R$7,90
+                            </label>
+                            <label>
+                                <input type="radio" name="bebida1" value="GarrafaRefri">
+                                <span class="radio-custom"></span>
+                                Garrafa De Coca Cola - 1,5L = R$9,90
+                            </label>
+                            <label>
+                                <input type="radio" name="bebida1" value="Agua">
+                                <span class="radio-custom"></span>
+                                Garrafa De Aguá Mineral - 500ml = R$4,00
+                            </label>
+                        </div>
+
+                        <div class="description-container">
+                            <label for="description${modalId}">Algum comentário?</label>
+                            <input id="description${modalId}" class="desc" name="description" type="text" placeholder="Ex: Tirar cebola, maionese á parte e etc"></input>
+                        </div>
+                        
+                        <button id="add-to-cart-button3" onclick="addToCart('Monstruoso', 48.90, 'modal3')">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal4" class="modal">
+
+            <div class="modal-content">
+
+                <span class="close" onclick="closeModal('modal4')">&times;</span>
+
+                <div class="modal-body">
+
+                    <div class="modal-image">
+                        <img src="img/202112021901_7R1B_i.avif" alt="combolovecheddarbacon">
+                    </div>
+                    
+                    <div class="modal-info">
+                        <h2>Combo Love Cheddar Bacon</h2>
+                        <p>I Love Cheddar + I Love Bacon + 2 Batatas + Refri 1,5l Grátis!</p>
+                        <p>Serve 2 pessoa</p>
+                        <strong>R$ 99,90</strong>
+                        
+                        <div class="modal-options">
+                            <h3>Escolha o Ponto da Carne Do I Love Cheddar!</h3>
+                            <label>
+                                <input type="radio" name="pontoCarne1" value="MalPassada" required>
+                                <span class="radio-custom"></span>
+                                Mal Passada
+                            </label>
+                            <label>
+                                <input type="radio" name="pontoCarne1" value="AoPonto" required>
+                                <span class="radio-custom"></span>
+                                Ao Ponto
+                            </label>
+                            <label>
+                                <input type="radio" name="pontoCarne1" value="BemPassada" required>
+                                <span class="radio-custom"></span>
+                                Bem Passada
+                            </label>
+                        </div>
+        
+                        <div class="modal-options">
+                            <h3>Escolha o Ponto da Carne Do I Love Bacon!</h3>
+                            <label>
+                                <input type="radio" name="pontoCarne2" value="MalPassada" required>
+                                <span class="radio-custom"></span>
+                                Mal Passada
+                            </label>
+                            <label>
+                                <input type="radio" name="pontoCarne2" value="AoPonto" required>
+                                <span class="radio-custom"></span>
+                                Ao Ponto
+                            </label>
+                            <label>
+                                <input type="radio" name="pontoCarne2" value="BemPassada" required>
+                                <span class="radio-custom"></span>
+                                Bem Passada
+                            </label>
+                        </div>
+
+                        <div class="description-container">
+                            <label for="description${modalId}">Algum comentário?</label>
+                            <input id="description${modalId}" class="desc" name="description" type="text" placeholder="Ex: Tirar cebola, maionese á parte e etc"></input>
+                        </div>
+                        
+                        <button id="add-to-cart-button4" onclick="addToCart('Combo Love Cheddar Bacon', 99.90, 'modal4')">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal5" class="modal">
+
+            <div class="modal-content">
+
+                <span class="close" onclick="closeModal('modal5')">&times;</span>
+
+                <div class="modal-body">
+
+                    <div class="modal-image">
+                        <img src="img/202112021903_4VEN_i.avif" alt="comboaustralianomonstruoso">
+                    </div>
+                    
+                    <div class="modal-info">
+                        <h2>Combo Australiano Monstruoso</h2>
+                        <p>Australiano + Monstruoso + 2 Batatas + Refri 1,5l Grátis!</p>
+                        <p>Serve 2 pessoa</p>
+                        <strong>R$ 89,90</strong>
+                        
+                        <div class="modal-options">
+                            <h3>Escolha o Ponto da Carne Do Australiano!</h3>
+                            <label>
+                                <input type="radio" name="pontoCarne1" value="MalPassada" required>
+                                <span class="radio-custom"></span>
+                                Mal Passada
+                            </label>
+                            <label>
+                                <input type="radio" name="pontoCarne1" value="AoPonto" required>
+                                <span class="radio-custom"></span>
+                                Ao Ponto
+                            </label>
+                            <label>
+                                <input type="radio" name="pontoCarne1" value="BemPassada" required>
+                                <span class="radio-custom"></span>
+                                Bem Passada
+                            </label>
+                        </div>
+        
+                        <div class="modal-options">
+                            <h3>Escolha o Ponto da Carne Do Monstruoso!</h3>
+                            <label>
+                                <input type="radio" name="pontoCarne2" value="MalPassada" required>
+                                <span class="radio-custom"></span>
+                                Mal Passada
+                            </label>
+                            <label>
+                                <input type="radio" name="pontoCarne2" value="AoPonto" required>
+                                <span class="radio-custom"></span>
+                                Ao Ponto
+                            </label>
+                            <label>
+                                <input type="radio" name="pontoCarne2" value="BemPassada" required>
+                                <span class="radio-custom"></span>
+                                Bem Passada
+                            </label>
+                        </div>
+
+                        <div class="description-container">
+                            <label for="description${modalId}">Algum comentário?</label>
+                            <input id="description${modalId}" class="desc" name="description" type="text" placeholder="Ex: Tirar cebola, maionese á parte e etc"></input>
+                        </div>
+                        
+                        <button id="add-to-cart-button5" onclick="addToCart('Combo Australiano Monstruoso', 89.90, 'modal5')">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal6" class="modal">
+
+            <div class="modal-content">
+
+                <span class="close" onclick="closeModal('modal6')">&times;</span>
+
+                <div class="modal-body">
+
+                    <div class="modal-image">
+                        <img src="img/202112262016_IBOQ_i.avif" alt="comboaustralianomonstruoso">
+                    </div>
+                    
+                    <div class="modal-info">
+                        <h2>Combo Fake Méqui</h2>
+                        <p>Fake Méqui + Quarteiraço + 2 Batatas + Refri 1,5l Grátis!</p>
+                        <p>Serve 2 pessoa</p>
+                        <strong>R$ 89,90</strong>
+                        
+                        <div class="modal-options">
+                            <h3>Escolha o Ponto da Carne Do Fake Méqui!</h3>
+                            <label>
+                                <input type="radio" name="pontoCarne1" value="MalPassada" required>
+                                <span class="radio-custom"></span>
+                                Mal Passada
+                            </label>
+                            <label>
+                                <input type="radio" name="pontoCarne1" value="AoPonto" required>
+                                <span class="radio-custom"></span>
+                                Ao Ponto
+                            </label>
+                            <label>
+                                <input type="radio" name="pontoCarne1" value="BemPassada" required>
+                                <span class="radio-custom"></span>
+                                Bem Passada
+                            </label>
+                        </div>
+        
+                        <div class="modal-options">
+                            <h3>Escolha o Ponto da Carne Do Quarteiraço!</h3>
+                            <label>
+                                <input type="radio" name="pontoCarne2" value="MalPassada" required>
+                                <span class="radio-custom"></span>
+                                Mal Passada
+                            </label>
+                            <label>
+                                <input type="radio" name="pontoCarne2" value="AoPonto" required>
+                                <span class="radio-custom"></span>
+                                Ao Ponto
+                            </label>
+                            <label>
+                                <input type="radio" name="pontoCarne2" value="BemPassada" required>
+                                <span class="radio-custom"></span>
+                                Bem Passada
+                            </label>
+                        </div>
+
+                        <div class="description-container">
+                            <label for="description${modalId}">Algum comentário?</label>
+                            <input id="description${modalId}" class="desc" name="description" type="text" placeholder="Ex: Tirar cebola, maionese á parte e etc"></input>
+                        </div>
+                        
+                        <button id="add-to-cart-button6" onclick="addToCart('Combo Fake Mequi', 89.90, 'modal6')">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal7" class="modal">
+
+            <div class="modal-content">
+
+                <span class="close" onclick="closeModal('modal7')">&times;</span>
+
+                <div class="modal-body">
+
+                    <div class="modal-image">
+                        <img src="img/202112021904_2JO0_i.avif" alt="comboclassico">
+                    </div>
+                    
+                    <div class="modal-info">
+                        <h2>Combo Clássico</h2>
+                        <p>Clássico X- Bacon + Mega Tasty + 2 Batatas + Refri 1,5l Grátis!</p>
+                        <p>Serve 2 pessoa</p>
+                        <strong>R$ 84,90</strong>
+                        
+                        <div class="modal-options">
+                            <h3>Escolha o Ponto da Carne Do X- Bacon!</h3>
+                            <label>
+                                <input type="radio" name="pontoCarne1" value="MalPassada" required>
+                                <span class="radio-custom"></span>
+                                Mal Passada
+                            </label>
+                            <label>
+                                <input type="radio" name="pontoCarne1" value="AoPonto" required>
+                                <span class="radio-custom"></span>
+                                Ao Ponto
+                            </label>
+                            <label>
+                                <input type="radio" name="pontoCarne1" value="BemPassada" required>
+                                <span class="radio-custom"></span>
+                                Bem Passada
+                            </label>
+                        </div>
+        
+                        <div class="modal-options">
+                            <h3>Escolha o Ponto da Carne Do Mega Tasty!</h3>
+                            <label>
+                                <input type="radio" name="pontoCarne2" value="MalPassada" required>
+                                <span class="radio-custom"></span>
+                                Mal Passada
+                            </label>
+                            <label>
+                                <input type="radio" name="pontoCarne2" value="AoPonto" required>
+                                <span class="radio-custom"></span>
+                                Ao Ponto
+                            </label>
+                            <label>
+                                <input type="radio" name="pontoCarne2" value="BemPassada" required>
+                                <span class="radio-custom"></span>
+                                Bem Passada
+                            </label>
+                        </div>
+
+                        <div class="description-container">
+                            <label for="description${modalId}">Algum comentário?</label>
+                            <input id="description${modalId}" class="desc" name="description" type="text" placeholder="Ex: Tirar cebola, maionese á parte e etc"></input>
+                        </div>
+                        
+                        <button id="add-to-cart-button7" onclick="addToCart('Combo Clássico', 84.90, 'modal7')">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal8" class="modal">
+
+            <div class="modal-content">
+
+                <span class="close" onclick="closeModal('modal8')">&times;</span>
+
+                <div class="modal-body">
+
+                    <div class="modal-image">
+                        <img src="img/202401011633_8401_i.avif" alt="combooriginal">
+                    </div>
+                    
+                    <div class="modal-info">
+                        <h2>Combo Original</h2>
+                        <p>Smash Egg Bacon + The Original + 2 Batatas+ Refri 1,5l Grátis!</p>
+                        <p>Serve 2 pessoa</p>
+                        <strong>R$ 84,90</strong>
+                        
+                        <div class="modal-options">
+                            <h3>Escolha o Ponto da Carne Do Egg Bacon!</h3>
+                            <label>
+                                <input type="radio" name="pontoCarne1" value="MalPassada" required>
+                                <span class="radio-custom"></span>
+                                Mal Passada
+                            </label>
+                            <label>
+                                <input type="radio" name="pontoCarne1" value="AoPonto" required>
+                                <span class="radio-custom"></span>
+                                Ao Ponto
+                            </label>
+                            <label>
+                                <input type="radio" name="pontoCarne1" value="BemPassada" required>
+                                <span class="radio-custom"></span>
+                                Bem Passada
+                            </label>
+                        </div>
+        
+                        <div class="modal-options">
+                            <h3>Escolha o Ponto da Carne Do The Original!</h3>
+                            <label>
+                                <input type="radio" name="pontoCarne2" value="MalPassada" required>
+                                <span class="radio-custom"></span>
+                                Mal Passada
+                            </label>
+                            <label>
+                                <input type="radio" name="pontoCarne2" value="AoPonto" required>
+                                <span class="radio-custom"></span>
+                                Ao Ponto
+                            </label>
+                            <label>
+                                <input type="radio" name="pontoCarne2" value="BemPassada" required>
+                                <span class="radio-custom"></span>
+                                Bem Passada
+                            </label>
+                        </div>
+
+                        <div class="description-container">
+                            <label for="description${modalId}">Algum comentário?</label>
+                            <input id="description${modalId}" class="desc" name="description" type="text" placeholder="Ex: Tirar cebola, maionese á parte e etc"></input>
+                        </div>
+                        
+                        <button id="add-to-cart-button8" onclick="addToCart('Combo Original', 84.90, 'modal8')">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal9" class="modal">
+
+            <div class="modal-content">
+
+                <span class="close" onclick="closeModal('modal9')">&times;</span>
+
+                <div class="modal-body">
+
+                    <div class="modal-image">
+                        <img src="img/202401011634_CSSG_i.avif" alt="combomonstruoso">
+                    </div>
+                    
+                    <div class="modal-info">
+                        <h2>Combo Monstro</h2>
+                        <p>2 Monstruoso + 2 Batatas + Refri 1,5l Grátis!</p>
+                        <p>Serve 2 pessoa</p>
+                        <strong>R$ 99,90</strong>
+                        
+                        <div class="modal-options">
+                            <h3>Escolha o Ponto da Carne Do 1 Monstruoso!</h3>
+                            <label>
+                                <input type="radio" name="pontoCarne1" value="MalPassada" required>
+                                <span class="radio-custom"></span>
+                                Mal Passada
+                            </label>
+                            <label>
+                                <input type="radio" name="pontoCarne1" value="AoPonto" required>
+                                <span class="radio-custom"></span>
+                                Ao Ponto
+                            </label>
+                            <label>
+                                <input type="radio" name="pontoCarne1" value="BemPassada" required>
+                                <span class="radio-custom"></span>
+                                Bem Passada
+                            </label>
+                        </div>
+        
+                        <div class="modal-options">
+                            <h3>Escolha o Ponto da Carne Do 2 Monstruoso!</h3>
+                            <label>
+                                <input type="radio" name="pontoCarne2" value="MalPassada" required>
+                                <span class="radio-custom"></span>
+                                Mal Passada
+                            </label>
+                            <label>
+                                <input type="radio" name="pontoCarne2" value="AoPonto" required>
+                                <span class="radio-custom"></span>
+                                Ao Ponto
+                            </label>
+                            <label>
+                                <input type="radio" name="pontoCarne2" value="BemPassada" required>
+                                <span class="radio-custom"></span>
+                                Bem Passada
+                            </label>
+                        </div>
+
+                        <div class="description-container">
+                            <label for="description${modalId}">Algum comentário?</label>
+                            <input id="description${modalId}" class="desc" name="description" type="text" placeholder="Ex: Tirar cebola, maionese á parte e etc"></input>
+                        </div>
+                        
+                        <button id="add-to-cart-button9" onclick="addToCart('Combo Monstro', 99.90, 'modal9')">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal10" class="modal">
+
+            <div class="modal-content">
+
+                <span class="close" onclick="closeModal('modal10')">&times;</span>
+
+                <div class="modal-body">
+
+                    <div class="modal-image">
+                        <img src="img/202005112230_Ptjf_f.avif" alt="refrigerantelata">
+                    </div>
+                    
+                    <div class="modal-info">
+                        <h2>Refrigerante Lata 350ml</h2>
+                        <p>Refrigerante lata 350ml das maiores marcas</p>
+                        <p>Serve 1 pessoa</p>
+                        <strong>R$ 7,90</strong>
+                        
+                        <div class="modal-options">
+                            <h3>Escolha Sua Bebida</h3>
+                            <label>
+                                <input type="radio" name="marcalata10" value="CocaCola" required>
+                                <span class="radio-custom"></span>
+                                Coca Cola
+                            </label>
+                            <label>
+                                <input type="radio" name="marcalata10" value="CocaColaZero" required>
+                                <span class="radio-custom"></span>
+                                Coca Cola Zero
+                            </label>
+                            <label>
+                                <input type="radio" name="marcalata10" value="FantaGuarana" required>
+                                <span class="radio-custom"></span>
+                                Fanta Guaraná
+                            </label>
+                            <label>
+                                <input type="radio" name="marcalata10" value="FantaGuaranaZero" required>
+                                <span class="radio-custom"></span>
+                                Fanta Guaraná Zero
+                            </label>
+                            <label>
+                                <input type="radio" name="marcalata10" value="FantaLaranja" required>
+                                <span class="radio-custom"></span>
+                                Fanta Laranja
+                            </label>
+                            <label>
+                                <input type="radio" name="marcalata10" value="FantaUva" required>
+                                <span class="radio-custom"></span>
+                                Fanta Uva
+                            </label>
+                            <label>
+                                <input type="radio" name="marcalata10" value="Sprite" required>
+                                <span class="radio-custom"></span>
+                                Sprite
+                            </label>
+                            <label>
+                                <input type="radio" name="marcalata10" value="Schweppes" required>
+                                <span class="radio-custom"></span>
+                                Schweppes
+                            </label>
+                        </div>
+
+                        <div class="description-container">
+                            <label for="description${modalId}">Algum comentário?</label>
+                            <input id="description${modalId}" class="desc" name="description" type="text" placeholder="Ex: Tirar cebola, maionese á parte e etc"></input>
+                        </div>
+                        
+                        <button id="add-to-cart-button10" onclick="addToCart('Refrigerante Lata', 7.90, 'modal10')">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal11" class="modal">
+
+            <div class="modal-content">
+
+                <span class="close" onclick="closeModal('modal11')">&times;</span>
+
+                <div class="modal-body">
+
+                    <div class="modal-image">
+                        <img src="img/202005112230_9t2S_3.avif" alt="refrigerantegarrafa">
+                    </div>
+                    
+                    <div class="modal-info">
+                        <h2>Refrigerante Garrafa 1,5lt</h2>
+                        <p>Refrigerante garrafa 1,5lt das maiores marcas</p>
+                        <p>Serve 3 pessoa</p>
+                        <strong>R$ 9,90</strong>
+                        
+                        <div class="modal-options">
+                            <h3>Escolha Sua Bebida</h3>
+                            <label>
+                                <input type="radio" name="marcagarrafa11" value="CocaCola" required>
+                                <span class="radio-custom"></span>
+                                Coca Cola
+                            </label>
+                            <label>
+                                <input type="radio" name="marcagarrafa11" value="CocaColaZero" required>
+                                <span class="radio-custom"></span>
+                                Coca Cola Zero
+                            </label>
+                            <label>
+                                <input type="radio" name="marcagarrafa11" value="FantaGuarana" required>
+                                <span class="radio-custom"></span>
+                                Fanta Guaraná
+                            </label>
+                            <label>
+                                <input type="radio" name="marcagarrafa11" value="FantaLaranja" required>
+                                <span class="radio-custom"></span>
+                                Fanta Laranja
+                            </label>
+                            <label>
+                                <input type="radio" name="marcagarrafa11" value="FantaUva" required>
+                                <span class="radio-custom"></span>
+                                Fanta Uva
+                            </label>
+                            <label>
+                                <input type="radio" name="marcagarrafa11" value="Sprite" required>
+                                <span class="radio-custom"></span>
+                                Sprite
+                            </label>
+                        </div>
+
+                        <div class="description-container">
+                            <label for="description${modalId}">Algum comentário?</label>
+                            <input id="description${modalId}" class="desc" name="description" type="text" placeholder="Ex: Tirar cebola, maionese á parte e etc"></input>
+                        </div>
+                        
+                        <button id="add-to-cart-button11" onclick="addToCart('Refrigerante Garrafa', 9.90, 'modal11')">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal12" class="modal">
+
+            <div class="modal-content">
+
+                <span class="close" onclick="closeModal('modal12')">&times;</span>
+
+                <div class="modal-body">
+
+                    <div class="modal-image">
+                        <img src="img/202005112254_4L2E_.avif" alt="aguamineral">
+                    </div>
+                    
+                    <div class="modal-info">
+                        <h2>Aguá Mineral</h2>
+                        <p>Garrafa de aguá mineral com 500ml</p>
+                        <p>Serve 1 pessoa</p>
+                        <strong>R$ 4,00</strong>
+                        
+                        <div class="modal-options">
+                            <h3>Escolha Sua Bebida</h3>
+                            <label>
+                                <input type="radio" name="agua12" value="AguaSemGas" required>
+                                <span class="radio-custom"></span>
+                                Aguá Sem Gás
+                            </label>
+                            <label>
+                                <input type="radio" name="agua12" value="AguaComGas" required>
+                                <span class="radio-custom"></span>
+                                Aguá Com Gás
+                            </label>
+                        </div>
+
+                        <div class="description-container">
+                            <label for="description${modalId}">Algum comentário?</label>
+                            <input id="description${modalId}" class="desc" name="description" type="text" placeholder="Ex: Tirar cebola, maionese á parte e etc"></input>
+                        </div>
+                        
+                        <button id="add-to-cart-button12" onclick="addToCart('Água Mineral', 4.00, 'modal12')">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal13" class="modal1">
+
+            <div class="modal-content1">
+
+                <span class="close" onclick="closeModal1('modal13')">&times;</span>
+
+                <div class="modal-body1">
+                    <div class="modal-info1">
+
+                        <h2>Carrinho De Pedidos</h2>
+        
+                        <div id="cart-items1">
+                            <!-- Os itens do carrinho serão inseridos dinamicamente aqui -->
+                        </div>
+
+                        <div id="cart-total">Total Do Pedido: R$ 0.00</div>
+        
+                        <div class="customer-info">
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name" placeholder="Digite seu nome..." required>
+        
+                            <label for="phone">Telefone:</label>
+                            <input type="tel" id="celular" placeholder="Digite seu telefone..." minlength="16" maxlength="16"required>
+        
+                            <label for="address">Endereço Completo:</label>
+                            <input id="address" placeholder="Digite seu endereço..." required></input>
+        
+                            <label for="payment">Forma de Pagamento:</label>
+                            <select id="payment">
+                                <option value="Cartão de Crédito">Cartão</option>
+                                <option value="Dinheiro">Dinheiro</option>
+                                <option value="Pix">Pix</option>
+                            </select>
+                        </div>
+        
+                        <!-- Botão para finalizar compra -->
+                        <button id="finalize-btn" onclick="finalizePurchase()">Finalizar Compra</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    
+    <!-- Rodapé da página -->
+
+    <footer>
+
+        <div class="footer-content">
+          <div class="about">
+            <h4>HAMBURGUERIA COME COME</h4>
+            <p>
+                A Pizza mais Fabulosa da região! Massa fininha e com muuuito recheio e é claro o Hamburguer Artesanal mais fabuloso da Zona Oeste! Siga a gente no Insta @_comecomeoficial. Lá temos diversas pormoções!
+            </p>
+            <div class="social-media">
+                <h4>REDE SOCIAL</h4>
+                <a onclick="redirecionarParaPagina1()"><i class="fab fa-facebook"></i></a>
+                <a onclick="redirecionarParaPagina2()"><i class="fab fa-tiktok"></i></a>
+                <a onclick="redirecionarParaPagina3()"><i class="bi bi-whatsapp"></i></a>
+                <a onclick="redirecionarParaPagina4()"><i class="fab fa-instagram"></i></a>
+                <a onclick="redirecionarParaPagina5()"><i class="bi bi-google"></i></a>
+            </div>
+          </div>
+
+          <div class="contact">
+            <h4>FALE CONOSCO</h4>
+            <p><i class="fas fa-map-marker-alt"></i> 506 Sul s/n, Loja 63 - Asa Sul, Brasília - DF </p>
+            <p><i class="fas fa-phone"></i> (21) 90000-0000</p>
+            <p><i class="fas fa-clock"></i> Seg a Sex: 08h - 20h / Sábado: 08h - 17h</p>
+            <div class="social-media">
+                <h4>FORMAS DE PAGAMENTO</h4>
+                <div class="payment-methods">
+                    <a href="#"><i class="bi bi-credit-card" title="Cartão"></i></a>
+                    <a href="#"><i class="bi bi-cash" title="Dinheiro"></i></a>
+                    <a href="#"><i class="bi bi-x-diamond" title="Pix"></i></a>
+
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>HAMBURGUERIA COME COME - 2025, CNPJ: 00.000.000/0000-00</p>
+          <p id="clique-footer" onclick="redirecionarParaPagina6()">&copy; Todos os direitos reservados | Desenvolvido por Fabio Guimarães</p>
+        </div>
+
+      </footer>
+
+    <!--Link para puxar mascara-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+    <!--inicio da mascara-->
+    <script>
+        $(document).ready(function() {
+            $('#celular').mask('(00) 00000-0000');
+        });
+    </script>
+    <!--fim da mascara-->
+      
+
+</body>
+
+</html>
